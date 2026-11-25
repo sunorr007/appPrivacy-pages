@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wake Loop — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #23202c; background: #f7f6fb;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e8e6f2; background: #14121b; } a { color: #b8aefc; } .box { background: #1d1a28 !important; border-color: #2c2839 !important; } p { color: #b7b1c9; } }
+  .box { background: #fff; border: 1px solid #e6e2f0; border-radius: 20px; padding: 2rem 1.75rem; max-width: 26rem; margin: 1.25rem; }
+  h1 { font-size: 1.35rem; margin: 0 0 .5rem; }
+  p { color: #6b6480; font-size: .95rem; }
+  a.btn { display: block; text-align: center; text-decoration: none; font-weight: 600; padding: .8rem 1rem; border-radius: 999px; background: #5b4bd6; color: #fff; margin-top: .9rem; }
+  a.alt { background: transparent; color: inherit; border: 1px solid #cfc9e4; }
+  a { color: #5b4bd6; }
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>Wake Loop — Privacy Policy</h1>
+  <p>Choose your language. 请选择语言。</p>
+  <a class="btn" href="privacy-en.html">English</a>
+  <a class="btn alt" href="privacy-zh.html">简体中文</a>
+</div>
+<script>
+  if (!/[?&]stay\b/.test(location.search)) {
+    var zh = (navigator.language || '').toLowerCase().indexOf('zh') === 0;
+    location.replace(zh ? 'privacy-zh.html' : 'privacy-en.html');
+  }
+</script>
+</body>
+</html>

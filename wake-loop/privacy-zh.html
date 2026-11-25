@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wake Loop · 戏精闹钟 — 隐私政策</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; max-width: 44rem; padding: 2.5rem 1.25rem 4rem;
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: #23202c; background: #f7f6fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e6f2; background: #14121b; }
+    a { color: #b8aefc; }
+    .card { background: #1d1a28 !important; border-color: #2c2839 !important; }
+    .meta { color: #9d97b3 !important; }
+  }
+  h1 { font-size: 1.6rem; line-height: 1.3; margin: 0 0 .35rem; }
+  h2 { font-size: 1.05rem; margin: 2.2rem 0 .6rem; }
+  .meta { color: #6b6480; font-size: .875rem; margin: 0 0 2rem; }
+  .card { background: #fff; border: 1px solid #e6e2f0; border-radius: 16px; padding: 1rem 1.15rem; margin: 1rem 0; }
+  ul { padding-left: 1.15rem; }
+  li { margin: .35rem 0; }
+  a { color: #5b4bd6; }
+  code { font-size: .9em; }
+  .lang { float: right; font-size: .875rem; }
+</style>
+</head>
+<body>
+<a class="lang" href="privacy-en.html">English</a>
+<h1>隐私政策 · Wake Loop（戏精闹钟）</h1>
+<p class="meta">最后更新：2026 年 11 月 24 日 · 适用于 Android 应用 <strong>Wake Loop</strong>（包名 <code>com.bjfhkj.wakeup</code>）</p>
+
+<div class="card">
+  <strong>一句话版本。</strong> Wake Loop 是一个本机优先的闹钟应用：没有账号、没有注册，也没有我们自建的服务器。
+  你的闹钟、贴纸与起床记录都只保存在这台手机上；相机画面只在内存中处理，不存储、不上传。
+  唯一涉及的第三方是 Google 的广告与统计服务，且只在你同意本政策之后才会启动。
+</div>
+
+<h2>1. 我们是谁</h2>
+<p>
+  Wake Loop 由北京烽鸿科技有限责任公司开发。与本政策相关的任何问题，请联系
+  <a href="mailto:support@fenghongtech.cn">support@fenghongtech.cn</a>。
+</p>
+
+<h2>2. 应用如何处理你的数据</h2>
+<p>以下处理全部发生在你的设备上。我们没有后端，因此不会收到你的任何数据。</p>
+<ul>
+  <li><strong>闹钟与排程</strong>——保存在手机本地数据库。</li>
+  <li><strong>起床记录与统计</strong>——保存在本机，用于绘制连续天数、热力图与报告。</li>
+  <li><strong>已登记贴纸</strong>——扫描到的码值存在本机，供下次响铃识别。</li>
+  <li><strong>相机画面</strong>——仅用于在内存中识别贴纸或比对参考照片，识别完成即丢弃；不存储、不上传、不写入相册。</li>
+  <li><strong>运动与计步传感器</strong>——只在计步或摇一摇任务进行时读取，任务结束即停止；不写入 Google Fit 或任何健康平台。</li>
+  <li><strong>备用码打印</strong>——图片交给系统打印或分享面板，由你选择去向；我们不保留副本。</li>
+  <li><strong>偏好设置</strong>——响铃风格、摇一摇力度、广告个性化等，保存在本机。</li>
+</ul>
+<p>卸载应用即删除以上全部数据。这里没有账号需要注销，也没有我们这边的副本需要删除。</p>
+
+<h2>3. 广告</h2>
+<p>Wake Loop 通过 <strong>Google AdMob</strong> 展示少量广告。为了选择与衡量广告，Google 移动广告 SDK 可能读取：</p>
+<ul>
+  <li>设备的广告标识符（可重置）；</li>
+  <li>设备型号、系统版本与语言；</li>
+  <li>IP 地址与粗略网络信息；</li>
+  <li>通过 Google Play 获取的安装来源归因数据。</li>
+</ul>
+<p>
+  Google 按其自身隐私政策处理这些数据：
+  <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a>。
+</p>
+<p><strong>如何控制</strong></p>
+<ul>
+  <li>应用内：<em>我的 → 设置 → 个性化广告</em>。关闭后，下一次广告请求即为非个性化。</li>
+  <li>系统层：在 Android 设置 → Google → 广告中重置或删除广告 ID。</li>
+  <li>欧盟、英国与瑞士：首次启动会弹出认证同意弹窗（Google UMP），之后可随时在
+      <em>设置 → 广告隐私选项</em> 中修改或撤回。</li>
+</ul>
+<p>
+  响铃页与任务页永远不展示广告；广告每天只出少量原生卡片，且同一素材短时间内不会跨页重复。
+</p>
+
+<h2>4. 统计</h2>
+<p>
+  国际版为 <strong>Firebase 统计</strong>预留了接入位置，但当前版本未启用：包内没有 Google 服务配置文件，
+  因此不会有任何统计事件离开设备。此外 manifest 层已关闭采集，直到你在运行时同意。
+  未来若启用，我们会先更新本节与应用内的第三方 SDK 清单。
+</p>
+
+<h2>5. 处理的法律依据（GDPR / 英国 GDPR）</h2>
+<ul>
+  <li><strong>同意</strong>——用于广告标识符与个性化广告；你可在设置中随时撤回。</li>
+  <li><strong>正当利益</strong>——保证应用可用、防止广告滥用、衡量整体安装质量，并与你的权利相平衡。</li>
+  <li><strong>合同</strong>——不适用：本应用没有付费服务，也没有账号。</li>
+</ul>
+
+<h2>6. 加州及其他美国州隐私权</h2>
+<p>
+  我们不会为获取金钱而出售个人信息。将广告标识符提供给 Google 用于个性化广告，在 CPRA
+  及类似州法下可能被认定为「共享」或「跨场景行为广告」。你可以这样退出：
+</p>
+<ul>
+  <li>在设置中关闭<em>个性化广告</em>，下一次广告请求即生效；</li>
+  <li>在 Android 设置中重置或删除广告 ID；</li>
+  <li>发邮件至 <a href="mailto:support@fenghongtech.cn">support@fenghongtech.cn</a>，我们会告知具体适用于你的情况。</li>
+</ul>
+<p>
+  我们不会有意收集敏感个人信息，不会进行产生法律效果的画像，也不掌握任何 16 岁以下消费者个人信息被出售或共享的实际情形。
+</p>
+
+<h2>7. 你的权利</h2>
+<p>依据所在地区，你可能拥有访问、更正、删除、限制或反对处理、以及数据可携的权利。由于数据都在本机、我们没有任何服务端记录，实际操作是：</p>
+<ul>
+  <li><strong>访问 / 可携</strong>——应用知道的一切，都能在设备上的应用内看到。</li>
+  <li><strong>删除</strong>——卸载应用，或在 Android 设置中清除其存储。</li>
+  <li><strong>反对 / 撤回同意</strong>——设置 → 个性化广告，或 设置 → 广告隐私选项。</li>
+  <li><strong>投诉</strong>——可联系当地数据保护机构。发送至
+      <a href="mailto:support@fenghongtech.cn">support@fenghongtech.cn</a> 的请求，我们会在 30 天内答复。</li>
+</ul>
+
+<h2>8. 跨境传输</h2>
+<p>
+  我们不自行传输数据。Google 可能在你所在国家/地区之外处理广告数据，其依据是标准合同条款及
+  其隐私政策中说明的保障措施。
+</p>
+
+<h2>9. 儿童</h2>
+<p>
+  Wake Loop 不面向 13 岁以下儿童（或你所在司法辖区的等效最低年龄），我们不会有意收集儿童的个人信息。
+  若你认为儿童使用了本应用，卸载即可——我们这边没有需要删除的数据。
+</p>
+
+<h2>10. 安全</h2>
+<p>
+  应用发起的所有网络请求（广告、远程广告频次策略）均使用 HTTPS；本地数据受 Android 应用沙箱保护。
+  我们不在任何服务器上保存你的数据副本，因此我们的系统被入侵也不会泄露你的闹钟、照片或起床记录。
+</p>
+
+<h2>11. 政策变更</h2>
+<p>
+  若变更涉及收集范围，我们会在新版本发布前先更新本页与应用内的隐私说明，必要时重新征求你的同意。
+  页面顶部的「最后更新」始终对应现行版本。
+</p>
+
+<h2>12. 联系方式</h2>
+<p>
+  北京烽鸿科技有限责任公司<br>
+  邮箱：<a href="mailto:support@fenghongtech.cn">support@fenghongtech.cn</a>
+</p>
+</body>
+</html>
