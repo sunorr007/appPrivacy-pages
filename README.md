@@ -5,6 +5,7 @@ privacy policy URL points at, so it must keep working:
 
 | App | Package | Policy URL |
 |---|---|---|
+| FamilyGM | `com.bjfhkj.familygm` | https://sunorr007.github.io/appPrivacy-pages/familygm/ |
 | Wake Loop | `com.bjfhkj.wakeup` | https://sunorr007.github.io/appPrivacy-pages/wake-loop/ |
 
 ## Adding an app
